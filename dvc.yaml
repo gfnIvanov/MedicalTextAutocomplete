@@ -1,0 +1,6 @@
+stages:
+  get_data:
+    cmd: make get_data -f
+    deps:
+      - src/data/get_data.py
+      - src/data/params/sources.yml

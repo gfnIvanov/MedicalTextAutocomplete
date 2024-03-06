@@ -1,0 +1,54 @@
+# http://nsi.rosminzdrav.ru/dictionaries/<identifier>
+fed_nsi:
+  url: http://nsi.rosminzdrav.ru/port/rest
+  dicts:
+    - oid: 1.2.643.5.1.13.13.11.1005  # МКБ10
+      fields:
+        - MKB_NAME
+    - oid: 1.2.643.5.1.13.13.11.1486  # МКБ-О-3
+      fields:
+        - NAME
+        - SYNONYMS
+    - oid: 1.2.643.5.1.13.13.99.2.785 # Медицинские процедуры и манипуляции
+      fields:
+        - NAME
+    - oid: 1.2.643.5.1.13.13.99.2.262  # Витальные параметры
+      fields:
+        - NAME
+    - oid: 1.2.643.5.1.13.13.11.1080  # Федеральный справочник лабораторных исследований. Справочник лабораторных тестов
+      fields:
+        - FULLNAME
+        - ENGLISHNAME
+        - SHORTNAME
+        - SYNONYMS
+    - oid: 1.2.643.5.1.13.13.11.1471  # Федеральный справочник инструментальных диагностических исследований
+      fields:
+        - FULLNAME
+        - SYNONYMS
+        - ANATOMIC_LOCAL
+    - oid: 1.2.643.5.1.13.13.11.1477  # Анатомические локализации
+      fields:
+        - NAME
+        - NAME_ENG
+        - SYNONYMS
+    - oid: 1.2.643.5.1.13.13.99.2.473 # Анатомо-терапевтическо-химическая классификация
+      fields:
+        - ATC_NAME
+        - ATC_NAME_ENG
+    - oid: 1.2.643.5.1.13.13.11.1485  # Осложнения лечения онкологических заболеваний
+      fields:
+        - NAME
+    - oid: 1.2.643.5.1.13.13.99.2.812 # Федеральный справочник хирургических операций
+      fields:
+        - NAME
+        - SYNONYM
+    - oid: 1.2.643.5.1.13.13.99.2.422 # Справочник расходных материалов (ФР ВМП)
+      fields:
+        - MEDTECHNAME
+    - oid: 1.2.643.5.1.13.13.11.1070  # Номенклатура медицинских услуг
+      fields:
+        - NAME
+# https://cr.minzdrav.gov.ru/clin_recomend
+clin_rec:
+  data_url: http://apicr.minzdrav.gov.ru/api.ashx?op=GetJsonClinrecs
+  schema_url: https://cr.minzdrav.gov.ru/schema

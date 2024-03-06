@@ -1,0 +1,27 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+.mypy_cache
+
+# Distribution / packaging
+dist/
+venv/
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+
+# DotEnv configuration
+.env
+
+# VS Code
+.vscode/
+
+# Mac OS-specific storage files
+.DS_Store
+
+# Log files
+logs/*
+
+# Exclude
+!.gitkeep

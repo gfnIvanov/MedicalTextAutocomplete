@@ -1,0 +1,13 @@
+schema: '2.0'
+stages:
+  get_data:
+    cmd: make get_data
+    deps:
+    - path: src/data/get_data.py
+      hash: md5
+      md5: c456e6916ba4c1cfc0a0583065853894
+      size: 4919
+    - path: src/data/params/sources.yml
+      hash: md5
+      md5: 3466511877cc2d54549908d473110782
+      size: 2041
